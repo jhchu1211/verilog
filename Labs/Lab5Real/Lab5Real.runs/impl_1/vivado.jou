@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 26 21:55:40 2021
+# Process ID: 12740
+# Current directory: E:/Vivado/RealVivado/Labs/Lab5Real/Lab5Real.runs/impl_1
+# Command line: vivado.exe -log Lab5.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab5.tcl -notrace
+# Log file: E:/Vivado/RealVivado/Labs/Lab5Real/Lab5Real.runs/impl_1/Lab5.vdi
+# Journal file: E:/Vivado/RealVivado/Labs/Lab5Real/Lab5Real.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab5.tcl -notrace

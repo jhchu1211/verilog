@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sim_1/new/SimLab2.v,1630557649,verilog,,,,SimLab2,,,,,,,,
+E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sim_1/new/lab2_sim.v,1630556817,verilog,,,,lab2_sim,,,,,,,,
+E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sources_1/new/Decoder.v,1630557088,verilog,,E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sim_1/new/lab2_sim.v,,Decoder,,,,,,,,
+E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sources_1/new/Lab2.v,1630557648,verilog,,E:/Vivado/RealVivado/Labs/Lab2NewNew/Lab2NewNew.srcs/sim_1/new/SimLab2.v,,Lab2,,,,,,,,

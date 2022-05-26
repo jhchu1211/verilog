@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 18 17:30:02 2021
+# Process ID: 18708
+# Current directory: E:/Vivado/RealVivado/Labs/Lab7/Lab7.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Vivado/RealVivado/Labs/Lab7/Lab7.runs/synth_1/main.vds
+# Journal file: E:/Vivado/RealVivado/Labs/Lab7/Lab7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 717.270 ; gain = 178.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/main.v:4]
+INFO: [Synth 8-6157] synthesizing module 'slowClock' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/slowClock.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'slowClock' (1#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/slowClock.v:4]
+INFO: [Synth 8-6157] synthesizing module 'second' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lowlowerSec' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:14]
+WARNING: [Synth 8-567] referenced signal 'Q1' should be on the sensitivity list [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:25]
+WARNING: [Synth 8-6090] variable 'Q2' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:61]
+WARNING: [Synth 8-6090] variable 'Q2' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:64]
+WARNING: [Synth 8-6090] variable 'Q3' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:72]
+WARNING: [Synth 8-6090] variable 'Q3' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:75]
+WARNING: [Synth 8-6090] variable 'Q4' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:83]
+WARNING: [Synth 8-6090] variable 'Q4' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:87]
+WARNING: [Synth 8-6090] variable 'Q2' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:95]
+WARNING: [Synth 8-6090] variable 'Q3' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:96]
+WARNING: [Synth 8-6090] variable 'Q4' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:97]
+WARNING: [Synth 8-6014] Unused sequential element go_reg was removed.  [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:40]
+WARNING: [Synth 8-6014] Unused sequential element go2_reg was removed.  [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:41]
+WARNING: [Synth 8-6014] Unused sequential element advance_reg was removed.  [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'lowlowerSec' (2#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'second' (3#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/second.v:3]
+INFO: [Synth 8-6157] synthesizing module 'segController' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:5]
+INFO: [Synth 8-6157] synthesizing module 'segCounter' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'segCounter' (4#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:15]
+INFO: [Synth 8-6157] synthesizing module 'twoDecoder' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'twoDecoder' (5#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:26]
+INFO: [Synth 8-6157] synthesizing module 'realDecoder' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'realDecoder' (6#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'segController' (7#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/segController.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/mux4.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (8#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/mux4.v:4]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/decoder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (9#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/decoder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'seg' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/seg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'seg' (10#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/seg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'main' (11#1) [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/main.v:4]
+WARNING: [Synth 8-3917] design main has port A[7] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[6] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[5] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 780.773 ; gain = 242.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 780.773 ; gain = 242.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 780.773 ; gain = 242.078
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Vivado/RealVivado/Labs/Lab7/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [E:/Vivado/RealVivado/Labs/Lab7/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/RealVivado/Labs/Lab7/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 894.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 894.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "C" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "C" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'dis_reg' [E:/Vivado/RealVivado/Labs/Lab7/Lab7.srcs/sources_1/new/mux4.v:9]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module slowClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
+Module lowlowerSec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+Module segCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module realDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "displayControl/C" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design main has port A[7] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[6] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[5] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[4] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (muck/dis_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (muck/dis_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (muck/dis_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (muck/dis_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 894.621 ; gain = 355.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 897.324 ; gain = 358.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 899.418 ; gain = 360.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    28|
+|3     |LUT1   |     4|
+|4     |LUT2   |     7|
+|5     |LUT3   |     7|
+|6     |LUT4   |    13|
+|7     |LUT5   |     6|
+|8     |LUT6   |    25|
+|9     |FDCE   |    16|
+|10    |FDRE   |    60|
+|11    |IBUF   |     3|
+|12    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+--------------+------+
+|      |Instance   |Module        |Cells |
++------+-----------+--------------+------+
+|1     |top        |              |   185|
+|2     |  segSeg   |segController |     8|
+|3     |    sCount |segCounter    |     8|
+|4     |  slowed   |slowClock     |   100|
+|5     |  timTimmy |second        |    58|
+|6     |    low    |lowlowerSec   |    58|
++------+-----------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 905.270 ; gain = 252.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 905.270 ; gain = 366.574
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 923.348 ; gain = 628.730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.348 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/RealVivado/Labs/Lab7/Lab7.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 18 17:30:38 2021...

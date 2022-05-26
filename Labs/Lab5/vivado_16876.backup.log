@@ -1,0 +1,400 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 26 17:06:49 2021
+# Process ID: 16876
+# Current directory: E:/Vivado/RealVivado/Labs/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12404 E:\Vivado\RealVivado\Labs\Lab5\Lab5.xpr
+# Log file: E:/Vivado/RealVivado/Labs/Lab5/vivado.log
+# Journal file: E:/Vivado/RealVivado/Labs/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project E:/Vivado/RealVivado/Labs/Lab5/Lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/RealVivado/Vivado/2019.1/data/ip'.oopen_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 657.238 ; gain = 60.828
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 26 17:09:51 2021...
+b5/Lab5.srcs/sources_1/new/sign_mag_add.v] -no_script -reset -force -quiet
+remove_files  E:/Vivado/RealVivado/Labs/Lab5/Lab5.srcs/sources_1/new/sign_mag_add.v
+update_compile_order -fileset sources_1
+close [ open E:/Vivado/RealVivado/Labs/Lab5/Lab5.srcs/sources_1/new/add.v w ]
+add_files E:/Vivado/RealVivado/Labs/Lab5/Lab5.srcs/sources_1/new/add.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Vivado/RealVivado/Labs/Lab5/Lab5.srcs/constrs_1/new/asd.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/Vivado/RealVivado/Labs/Lab5/Lab5.srcs/constrs_1/new/asd.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep 26 17:12:25 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep 26 17:13:13 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:14:28 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:16:00 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+[Sun Sep 26 17:16:00 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.121 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2014.414 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:24:49 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2014.414 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:27:01 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2063.508 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:34:12 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+[Sun Sep 26 17:34:12 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2120.488 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:38:08 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2167.188 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2167.188 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_project E:/Vivado/RealVivado/Labs/Lab4Real/Lab4Real.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/RealVivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+current_project Lab5
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:51:55 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2167.188 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:56:32 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 17:58:11 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+[Sun Sep 26 17:58:11 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/convert.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2167.188 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+current_project Lab4Real
+current_project Lab5
+current_project Lab4Real
+current_project Lab5
+export_ip_user_files -of_objects  [get_files {{E:/Vivado/RealVivado/Labs/Lab5/Nexys-A7-100T-Master - Copy.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{E:/Vivado/RealVivado/Labs/Lab5/Nexys-A7-100T-Master - Copy.xdc}}
+add_files -fileset constrs_1 -norecurse E:/Vivado/RealVivado/Labs/Lab5/Nexys-A7-100T-Master.xdc
+current_project Lab4Real
+current_project Lab5
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:08:39 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+[Sun Sep 26 18:08:39 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:15:12 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:18:04 2021] Launched synth_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/synth_1/runme.log
+[Sun Sep 26 18:18:04 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/add.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3130.438 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_project Lab4Real
+close_hw
+current_project Lab5
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:22:45 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:23:19 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/add.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/add.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3130.637 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep 26 18:26:48 2021] Launched impl_1...
+Run output will be captured here: E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Digilent/210292B17D5FA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B17D5FA
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/add.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vivado/RealVivado/Labs/Lab5/Lab5.runs/impl_1/add.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3130.891 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+current_project Lab4Real
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 26 18:39:53 2021...

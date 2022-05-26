@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 23 19:33:05 2021
+# Process ID: 57468
+# Current directory: E:/Vivado/RealVivado/Labs/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent61436 E:\Vivado\RealVivado\Labs\Lab2\Lab2.xpr
+# Log file: E:/Vivado/RealVivado/Labs/Lab2/vivado.log
+# Journal file: E:/Vivado/RealVivado/Labs/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado/RealVivado/Labs/Lab2/Lab2.xpr

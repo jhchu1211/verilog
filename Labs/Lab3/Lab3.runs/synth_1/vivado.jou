@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep 18 15:51:15 2021
+# Process ID: 12584
+# Current directory: E:/Vivado/RealVivado/Labs/Lab3/Lab3.runs/synth_1
+# Command line: vivado.exe -log Adder4bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder4bit.tcl
+# Log file: E:/Vivado/RealVivado/Labs/Lab3/Lab3.runs/synth_1/Adder4bit.vds
+# Journal file: E:/Vivado/RealVivado/Labs/Lab3/Lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Adder4bit.tcl -notrace

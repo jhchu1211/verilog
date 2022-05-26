@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sim_1/new/main.v,1637022019,verilog,,,,main,,,,,,,,
+E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sources_1/new/Parity.v,1637021453,verilog,,E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sim_1/new/main.v,,Dff;Parity;SlowCLKGen;mux2;pair;shift;shift_reg,,,,,,,,

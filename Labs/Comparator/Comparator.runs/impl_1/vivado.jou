@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 26 10:33:19 2021
+# Process ID: 6824
+# Current directory: E:/Vivado/RealVivado/Labs/Comparator/Comparator.runs/impl_1
+# Command line: vivado.exe -log Comparator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Comparator.tcl -notrace
+# Log file: E:/Vivado/RealVivado/Labs/Comparator/Comparator.runs/impl_1/Comparator.vdi
+# Journal file: E:/Vivado/RealVivado/Labs/Comparator/Comparator.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Comparator.tcl -notrace

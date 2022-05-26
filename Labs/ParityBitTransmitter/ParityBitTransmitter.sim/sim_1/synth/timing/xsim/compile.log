@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.sim/sim_1/synth/timing/xsim/main_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dff
+INFO: [VRFC 10-311] analyzing module Parity
+INFO: [VRFC 10-311] analyzing module SlowCLKGen
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-311] analyzing module shift_0
+INFO: [VRFC 10-311] analyzing module shift_1
+INFO: [VRFC 10-311] analyzing module shift_2
+INFO: [VRFC 10-311] analyzing module shift_3
+INFO: [VRFC 10-311] analyzing module shift_4
+INFO: [VRFC 10-311] analyzing module shift_5
+INFO: [VRFC 10-311] analyzing module shift_6
+INFO: [VRFC 10-311] analyzing module shift_reg
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sim_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main

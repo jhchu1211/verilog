@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sources_1/new/Parity.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Parity
+INFO: [VRFC 10-311] analyzing module shift_reg
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-311] analyzing module pair
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module Dff
+INFO: [VRFC 10-311] analyzing module SlowCLKGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado/RealVivado/Labs/ParityBitTransmitter/ParityBitTransmitter.srcs/sim_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main

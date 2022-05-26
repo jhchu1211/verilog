@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"main_time_synth.v" \
+"../../../../../ParityBitTransmitter.srcs/sim_1/new/main.v" \
+
+# Do not sort compile order
+nosort

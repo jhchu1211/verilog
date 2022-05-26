@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  8 18:46:34 2021
+# Process ID: 352
+# Current directory: E:/Vivado/RealVivado/Labs/Lab11/Lab11.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Vivado/RealVivado/Labs/Lab11/Lab11.runs/synth_1/main.vds
+# Journal file: E:/Vivado/RealVivado/Labs/Lab11/Lab11.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

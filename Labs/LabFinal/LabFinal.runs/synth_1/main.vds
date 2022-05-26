@@ -1,0 +1,439 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 29 22:48:39 2021
+# Process ID: 13856
+# Current directory: E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.runs/synth_1/main.vds
+# Journal file: E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26760 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 717.184 ; gain = 178.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/main.v:4]
+INFO: [Synth 8-6157] synthesizing module 'button' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:4]
+INFO: [Synth 8-6157] synthesizing module 'octaveSet' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:26]
+WARNING: [Synth 8-6090] variable 'a2_inc' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'octaveSet' (1#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:26]
+INFO: [Synth 8-6157] synthesizing module 'choose' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:132]
+WARNING: [Synth 8-3848] Net oct in module/entity choose does not have driver. [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'choose' (2#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:121]
+WARNING: [Synth 8-7023] instance 'buttonStage1' of module 'choose' has 6 connections declared, but only 5 given [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:19]
+INFO: [Synth 8-6157] synthesizing module 'octaveOn' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'octaveOn' (3#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'button' (4#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:4]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'slowClock' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'slowClock' (5#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sevSegController' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:34]
+INFO: [Synth 8-6157] synthesizing module 'segCounter' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'segCounter' (6#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:44]
+INFO: [Synth 8-6157] synthesizing module 'twoDecoder' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'twoDecoder' (7#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:55]
+INFO: [Synth 8-6157] synthesizing module 'realDecoder' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'realDecoder' (8#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'sevSegController' (9#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:34]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (10#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:75]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (11#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:86]
+INFO: [Synth 8-6157] synthesizing module 'seg' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'seg' (12#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'display' (13#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sound' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:4]
+INFO: [Synth 8-6157] synthesizing module 'newselect' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:39]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'newselect' (14#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'sound' (15#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'main' (16#1) [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/main.v:4]
+WARNING: [Synth 8-3917] design main has port A[7] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[6] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[5] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[4] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[3] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[2] driven by constant 1
+WARNING: [Synth 8-3917] design main has port oct[4] driven by constant 0
+WARNING: [Synth 8-3331] design choose has unconnected port oct[4]
+WARNING: [Synth 8-3331] design choose has unconnected port oct[3]
+WARNING: [Synth 8-3331] design choose has unconnected port oct[2]
+WARNING: [Synth 8-3331] design choose has unconnected port oct[1]
+WARNING: [Synth 8-3331] design choose has unconnected port oct[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.230 ; gain = 241.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.230 ; gain = 241.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.230 ; gain = 241.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Vivado/RealVivado/Labs/LabFinal/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [E:/Vivado/RealVivado/Labs/LabFinal/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/RealVivado/Labs/LabFinal/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 896.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 896.102 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "C" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "go" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "note" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'a2_reg' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/button.v:135]
+WARNING: [Synth 8-327] inferring latch for variable 'pow_reg' [E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.srcs/sources_1/new/sound.v:73]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	  13 Input     18 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module octaveSet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module choose 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module slowClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module segCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module realDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module newselect 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	  13 Input     18 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+Module sound 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "mainStage2/soundStage0/go" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mainStage1/displayStage4/C" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mainStage2/soundStage0/note" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design main has port aud_sd driven by constant 1
+WARNING: [Synth 8-3917] design main has port AN[1] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[7] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[6] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[5] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[4] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[3] driven by constant 1
+WARNING: [Synth 8-3917] design main has port A[2] driven by constant 1
+WARNING: [Synth 8-3917] design main has port oct[4] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mainStage2/soundStage0/pow_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mainStage2/soundStage0/pow_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mainStage2/soundStage0/pow_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mainStage2/soundStage0/pow_reg[19] )
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[19]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[18]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[16]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[15]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[14]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[13]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mainStage2/soundStage0/pow_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 896.102 ; gain = 356.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 900.297 ; gain = 361.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 907.734 ; gain = 368.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   200|
+|3     |LUT1   |     1|
+|4     |LUT2   |   161|
+|5     |LUT3   |    34|
+|6     |LUT4   |    49|
+|7     |LUT5   |    73|
+|8     |LUT6   |   525|
+|9     |FDRE   |    74|
+|10    |LD     |    24|
+|11    |IBUF   |    17|
+|12    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------+------+
+|      |Instance          |Module    |Cells |
++------+------------------+----------+------+
+|1     |top               |          |  1183|
+|2     |  mainStage0      |button    |   113|
+|3     |    buttonStage0  |octaveSet |    63|
+|4     |    buttonStage1  |choose    |    50|
+|5     |  mainStage1      |display   |     7|
+|6     |    displayStage4 |seg       |     7|
+|7     |  mainStage2      |sound     |  1021|
+|8     |    soundStage0   |newselect |   978|
++------+------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 912.625 ; gain = 373.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 912.625 ; gain = 257.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 912.625 ; gain = 373.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LD => LDCE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 924.773 ; gain = 623.246
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.773 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/RealVivado/Labs/LabFinal/LabFinal.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 22:49:16 2021...
